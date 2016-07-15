@@ -1,0 +1,67 @@
+//////////////////////////////////////////
+/------------ Beginning Test ------------/
+//////////////////////////////////////////
+Testing command: ./go/go_test
+Testing host: http://127.0.0.1:8000
+
+-------- Testing Status Endpoint ---------
+
+    ---Concurrency Level 1---
+            - 100 Requests -              
+Complete requests:      100
+Failed requests:        0
+Time per request:       0.224 [ms] (mean, across all concurrent requests)
+Max Memory Used: 5
+            - 1000 Requests -              
+Complete requests:      1000
+Failed requests:        0
+Time per request:       0.209 [ms] (mean, across all concurrent requests)
+Max Memory Used: 8
+            - 10000 Requests -              
+Complete requests:      10000
+Failed requests:        0
+Time per request:       0.233 [ms] (mean, across all concurrent requests)
+Max Memory Used: 8
+    ---Concurrency Level 10---
+            - 100 Requests -              
+Complete requests:      100
+Failed requests:        0
+Time per request:       0.466 [ms] (mean, across all concurrent requests)
+Max Memory Used: 6
+            - 1000 Requests -              
+Complete requests:      1000
+Failed requests:        0
+Time per request:       0.353 [ms] (mean, across all concurrent requests)
+Max Memory Used: 8
+            - 10000 Requests -              
+Complete requests:      10000
+Failed requests:        0
+Time per request:       2.233 [ms] (mean, across all concurrent requests)
+Max Memory Used: 9
+    ---Concurrency Level 100---
+            - 100 Requests -              
+Complete requests:      100
+Failed requests:        0
+Time per request:       0.312 [ms] (mean, across all concurrent requests)
+Max Memory Used: 7
+            - 1000 Requests -              
+Complete requests:      1000
+Failed requests:        0
+Time per request:       0.342 [ms] (mean, across all concurrent requests)
+Max Memory Used: 8
+            - 10000 Requests -              
+Complete requests:      10000
+Failed requests:        0
+Time per request:       1.633 [ms] (mean, across all concurrent requests)
+Max Memory Used: 9
+    ---Concurrency Level 1000---
+            - 1000 Requests -              
+Complete requests:      1000
+Failed requests:        96
+Time per request:       0.992 [ms] (mean, across all concurrent requests)
+Max Memory Used: 22
+            - 10000 Requests -              
+Complete requests:      10000
+Failed requests:        3802
+Time per request:       2.336 [ms] (mean, across all concurrent requests)
+Max Memory Used: 25
