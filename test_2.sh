@@ -50,4 +50,7 @@ do
     done
 done
 
+echo
+echo "************ End of Test **************"
+
 rm /tmp/results
