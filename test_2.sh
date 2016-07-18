@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 
 if [ $# -le 0 ]; then
@@ -9,7 +9,7 @@ fi
 
 COMMAND="$1"
 HOST="http://127.0.0.1:8000"
-CONCURRENCIES=(1 10 100 500)
+CONCURRENCIES=(10 100 500)
 REQUESTLOADS=(100 1000 10000)
 ENDPOINTS=("/status" "/echo/hello")
 
@@ -24,7 +24,6 @@ for e in "${ENDPOINTS[@]}"
 do
     echo "-------- Testing $e Endpoint ---------"
     echo
-
 
     for c in "${CONCURRENCIES[@]}"
     do
@@ -41,11 +40,11 @@ do
 	    TIMEPID=$!
 	    sleep 1
 	    COMMANDPID=$(pgrep -P $TIMEPID)
-	    ab -c $c -n $n -r -q $HOST/status | grep -e 'across all' -e 'Complete' -e 'Failed'
+	    wrk2 -t4 -c$c -d30s -R$n $HOST$e
 	    kill $COMMANDPID
 	    sleep 1
 	    MEM=$(cat /tmp/results | grep maximum | awk '{print $1}')
-	    echo "Max Memory Used: $(expr $MEM / 1048576)"
+	    echo "Max Memory Used: $(expr $MEM / 1048576)MB"
 	    sleep 1
 	done
     done
