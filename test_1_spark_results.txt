@@ -1,0 +1,132 @@
+//////////////////////////////////////////
+/------------ Beginning Test ------------/
+//////////////////////////////////////////
+Testing command: java -jar java/target/spark_test-1.0-SNAPSHOT-jar-with-dependencies.jar
+Testing host: http://127.0.0.1:8000
+
+-------- Testing /status Endpoint ---------
+
+    ---Concurrency Level 1---
+            - 100 Requests -              
+Complete requests:      100
+Failed requests:        0
+Time per request:       1.495 [ms] (mean, across all concurrent requests)
+Max Memory Used: 49 MB
+            - 1000 Requests -              
+Complete requests:      1000
+Failed requests:        0
+Time per request:       0.591 [ms] (mean, across all concurrent requests)
+Max Memory Used: 75 MB
+            - 10000 Requests -              
+Complete requests:      10000
+Failed requests:        0
+Time per request:       0.329 [ms] (mean, across all concurrent requests)
+Max Memory Used: 140 MB
+    ---Concurrency Level 10---
+            - 100 Requests -              
+Complete requests:      100
+Failed requests:        0
+Time per request:       1.535 [ms] (mean, across all concurrent requests)
+Max Memory Used: 52 MB
+            - 1000 Requests -              
+Complete requests:      1000
+Failed requests:        0
+Time per request:       0.664 [ms] (mean, across all concurrent requests)
+Max Memory Used: 77 MB
+            - 10000 Requests -              
+Complete requests:      10000
+Failed requests:        0
+Time per request:       2.168 [ms] (mean, across all concurrent requests)
+Max Memory Used: 144 MB
+    ---Concurrency Level 100---
+            - 100 Requests -              
+Complete requests:      100
+Failed requests:        0
+Time per request:       2.870 [ms] (mean, across all concurrent requests)
+Max Memory Used: 67 MB
+            - 1000 Requests -              
+Complete requests:      1000
+Failed requests:        204
+Time per request:       0.586 [ms] (mean, across all concurrent requests)
+Max Memory Used: 91 MB
+            - 10000 Requests -              
+Complete requests:      10000
+Failed requests:        614
+Time per request:       1.712 [ms] (mean, across all concurrent requests)
+Max Memory Used: 162 MB
+    ---Concurrency Level 500---
+            - 1000 Requests -              
+Complete requests:      1000
+Failed requests:        1000
+Time per request:       6.613 [ms] (mean, across all concurrent requests)
+Max Memory Used: 88 MB
+            - 10000 Requests -              
+Complete requests:      10000
+Failed requests:        2108
+Time per request:       1.458 [ms] (mean, across all concurrent requests)
+Max Memory Used: 166 MB
+-------- Testing /echo/hello Endpoint ---------
+
+    ---Concurrency Level 1---
+            - 100 Requests -              
+Complete requests:      100
+Failed requests:        0
+Time per request:       1.924 [ms] (mean, across all concurrent requests)
+Max Memory Used: 49 MB
+            - 1000 Requests -              
+Complete requests:      1000
+Failed requests:        0
+Time per request:       0.948 [ms] (mean, across all concurrent requests)
+Max Memory Used: 72 MB
+            - 10000 Requests -              
+Complete requests:      10000
+Failed requests:        0
+Time per request:       1.066 [ms] (mean, across all concurrent requests)
+Max Memory Used: 151 MB
+    ---Concurrency Level 10---
+            - 100 Requests -              
+Complete requests:      100
+Failed requests:        0
+Time per request:       1.435 [ms] (mean, across all concurrent requests)
+Max Memory Used: 52 MB
+            - 1000 Requests -              
+Complete requests:      1000
+Failed requests:        0
+Time per request:       0.652 [ms] (mean, across all concurrent requests)
+Max Memory Used: 78 MB
+            - 10000 Requests -              
+Complete requests:      10000
+Failed requests:        0
+Time per request:       1.463 [ms] (mean, across all concurrent requests)
+Max Memory Used: 153 MB
+    ---Concurrency Level 100---
+            - 100 Requests -              
+Complete requests:      100
+Failed requests:        0
+Time per request:       2.441 [ms] (mean, across all concurrent requests)
+Max Memory Used: 67 MB
+            - 1000 Requests -              
+Complete requests:      1000
+Failed requests:        278
+Time per request:       1.892 [ms] (mean, across all concurrent requests)
+Max Memory Used: 89 MB
+            - 10000 Requests -              
+Complete requests:      10000
+Failed requests:        798
+Time per request:       1.805 [ms] (mean, across all concurrent requests)
+Max Memory Used: 182 MB
+    ---Concurrency Level 500---
+            - 1000 Requests -              
+
+Test aborted after 10 failures
+
+apr_socket_connect(): Operation already in progress (37)
+Max Memory Used: 66 MB
+            - 10000 Requests -              
+
+Test aborted after 10 failures
+
+apr_socket_connect(): Operation already in progress (37)
+Max Memory Used: 154 MB
+
+************ End of Test **************

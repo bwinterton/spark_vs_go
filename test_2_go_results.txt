@@ -1,0 +1,243 @@
+//////////////////////////////////////////
+/------------ Beginning Test ------------/
+//////////////////////////////////////////
+Testing command: ./go/go_test
+Testing host: http://127.0.0.1:8000
+
+-------- Testing /status Endpoint ---------
+
+    ---Concurrency Level 10---
+            - 100 Requests -              
+Running 30s test @ http://127.0.0.1:8000/status
+  4 threads and 10 connections
+  Thread calibration: mean lat.: 2.774ms, rate sampling interval: 11ms
+  Thread calibration: mean lat.: 2.690ms, rate sampling interval: 11ms
+  Thread calibration: mean lat.: 2.798ms, rate sampling interval: 11ms
+  Thread calibration: mean lat.: 2.812ms, rate sampling interval: 11ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.71ms  610.80us   4.60ms   72.94%
+    Req/Sec    27.77     55.66   200.00     83.89%
+  3004 requests in 30.00s, 387.23KB read
+Requests/sec:    100.13
+Transfer/sec:     12.91KB
+Max Memory Used: 8 MB
+            - 1000 Requests -              
+Running 30s test @ http://127.0.0.1:8000/status
+  4 threads and 10 connections
+  Thread calibration: mean lat.: 1.654ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.653ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.628ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.622ms, rate sampling interval: 10ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.50ms  594.35us  14.30ms   69.41%
+    Req/Sec   263.03     65.64   454.00     69.94%
+  30004 requests in 30.00s, 3.78MB read
+Requests/sec:   1000.04
+Transfer/sec:    128.91KB
+Max Memory Used: 8 MB
+            - 10000 Requests -              
+Running 30s test @ http://127.0.0.1:8000/status
+  4 threads and 10 connections
+  Thread calibration: mean lat.: 1.236ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.234ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.237ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.243ms, rate sampling interval: 10ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.25ms  708.21us  19.18ms   72.86%
+    Req/Sec     2.63k   231.03     7.33k    67.45%
+  299962 requests in 30.00s, 37.76MB read
+Requests/sec:   9998.83
+Transfer/sec:      1.26MB
+Max Memory Used: 9 MB
+    ---Concurrency Level 100---
+            - 100 Requests -              
+Running 30s test @ http://127.0.0.1:8000/status
+  4 threads and 100 connections
+  Thread calibration: mean lat.: 1.725ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.644ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.679ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.619ms, rate sampling interval: 10ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.55ms  590.37us   3.80ms   68.16%
+    Req/Sec    28.42     73.55   333.00     87.48%
+  3004 requests in 30.00s, 387.23KB read
+Requests/sec:    100.13
+Transfer/sec:     12.91KB
+Max Memory Used: 10 MB
+            - 1000 Requests -              
+Running 30s test @ http://127.0.0.1:8000/status
+  4 threads and 100 connections
+  Thread calibration: mean lat.: 1.617ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.626ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.630ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.617ms, rate sampling interval: 10ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.50ms  572.43us   4.33ms   68.54%
+    Req/Sec   263.27    101.42   666.00     76.41%
+  29984 requests in 30.00s, 3.77MB read
+Requests/sec:    999.40
+Transfer/sec:    128.83KB
+Max Memory Used: 10 MB
+            - 10000 Requests -              
+Running 30s test @ http://127.0.0.1:8000/status
+  4 threads and 100 connections
+  Thread calibration: mean lat.: 1.668ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.683ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.673ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.697ms, rate sampling interval: 10ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.69ms  789.08us   8.82ms   67.77%
+    Req/Sec     2.64k   350.47     4.00k    69.80%
+  299428 requests in 30.00s, 37.69MB read
+Requests/sec:   9980.18
+Transfer/sec:      1.26MB
+Max Memory Used: 11 MB
+    ---Concurrency Level 500---
+            - 1000 Requests -              
+Running 30s test @ http://127.0.0.1:8000/status
+  4 threads and 500 connections
+  Thread calibration: mean lat.: 1.620ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.618ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.610ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 3.910ms, rate sampling interval: 14ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.71ms    0.95ms  13.08ms   82.26%
+    Req/Sec   263.50    613.12     9.61k    99.29%
+  29683 requests in 30.01s, 3.74MB read
+Requests/sec:    989.25
+Transfer/sec:    127.52KB
+Max Memory Used: 22 MB
+            - 10000 Requests -              
+Running 30s test @ http://127.0.0.1:8000/status
+  4 threads and 500 connections
+  Thread calibration: mean lat.: 1.725ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.692ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.714ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 3.041ms, rate sampling interval: 11ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.84ms    1.29ms  26.29ms   86.96%
+    Req/Sec     2.67k     2.08k   12.50k    80.07%
+  295345 requests in 30.01s, 37.18MB read
+Requests/sec:   9842.94
+Transfer/sec:      1.24MB
+Max Memory Used: 22 MB
+-------- Testing /echo/hello Endpoint ---------
+
+    ---Concurrency Level 10---
+            - 100 Requests -              
+Running 30s test @ http://127.0.0.1:8000/echo/hello
+  4 threads and 10 connections
+  Thread calibration: mean lat.: 3.012ms, rate sampling interval: 11ms
+  Thread calibration: mean lat.: 3.117ms, rate sampling interval: 11ms
+  Thread calibration: mean lat.: 2.833ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 2.857ms, rate sampling interval: 10ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.69ms  719.40us   4.67ms   68.42%
+    Req/Sec    27.94     58.57   222.00     82.64%
+  3004 requests in 30.00s, 396.04KB read
+Requests/sec:    100.12
+Transfer/sec:     13.20KB
+Max Memory Used: 8 MB
+            - 1000 Requests -              
+Running 30s test @ http://127.0.0.1:8000/echo/hello
+  4 threads and 10 connections
+  Thread calibration: mean lat.: 1.660ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.766ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.689ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.705ms, rate sampling interval: 10ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.52ms  627.16us  14.19ms   68.62%
+    Req/Sec   264.06     83.31   444.00     78.95%
+  30000 requests in 30.00s, 3.86MB read
+Requests/sec:    999.94
+Transfer/sec:    131.83KB
+Max Memory Used: 8 MB
+            - 10000 Requests -              
+Running 30s test @ http://127.0.0.1:8000/echo/hello
+  4 threads and 10 connections
+  Thread calibration: mean lat.: 1.232ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.232ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.233ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.239ms, rate sampling interval: 10ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.25ms  702.01us  18.69ms   72.16%
+    Req/Sec     2.64k   233.17     6.78k    66.81%
+  299960 requests in 30.00s, 38.62MB read
+Requests/sec:   9998.64
+Transfer/sec:      1.29MB
+Max Memory Used: 9 MB
+    ---Concurrency Level 100---
+            - 100 Requests -              
+Running 30s test @ http://127.0.0.1:8000/echo/hello
+  4 threads and 100 connections
+  Thread calibration: mean lat.: 1.579ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.603ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.551ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.529ms, rate sampling interval: 10ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.51ms  540.54us   3.55ms   66.47%
+    Req/Sec    28.27     72.77   333.00     87.52%
+  3004 requests in 30.00s, 396.04KB read
+Requests/sec:    100.13
+Transfer/sec:     13.20KB
+Max Memory Used: 10 MB
+            - 1000 Requests -              
+Running 30s test @ http://127.0.0.1:8000/echo/hello
+  4 threads and 100 connections
+  Thread calibration: mean lat.: 1.599ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.582ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.562ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.590ms, rate sampling interval: 10ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.45ms  571.86us  12.92ms   68.61%
+    Req/Sec   263.14    103.00   666.00     77.08%
+  29984 requests in 30.00s, 3.86MB read
+Requests/sec:    999.38
+Transfer/sec:    131.75KB
+Max Memory Used: 10 MB
+            - 10000 Requests -              
+Running 30s test @ http://127.0.0.1:8000/echo/hello
+  4 threads and 100 connections
+  Thread calibration: mean lat.: 1.771ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.784ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.804ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.789ms, rate sampling interval: 10ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.79ms  821.38us   8.35ms   68.15%
+    Req/Sec     2.64k   385.09     4.11k    72.74%
+  299429 requests in 30.00s, 38.55MB read
+Requests/sec:   9979.95
+Transfer/sec:      1.28MB
+Max Memory Used: 11 MB
+    ---Concurrency Level 500---
+            - 1000 Requests -              
+Running 30s test @ http://127.0.0.1:8000/echo/hello
+  4 threads and 500 connections
+  Thread calibration: mean lat.: 1.715ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.712ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 5.204ms, rate sampling interval: 18ms
+  Thread calibration: mean lat.: 5.230ms, rate sampling interval: 18ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.64ms    2.01ms  15.60ms   82.52%
+    Req/Sec   265.66    722.36     7.35k    98.17%
+  29460 requests in 30.00s, 3.79MB read
+  Socket errors: connect 0, read 70, write 0, timeout 0
+Requests/sec:    981.86
+Transfer/sec:    129.44KB
+Max Memory Used: 22 MB
+            - 10000 Requests -              
+Running 30s test @ http://127.0.0.1:8000/echo/hello
+  4 threads and 500 connections
+  Thread calibration: mean lat.: 1.808ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.792ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.793ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 1.782ms, rate sampling interval: 10ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.79ms    0.85ms   8.63ms   72.65%
+    Req/Sec     2.64k   389.12     4.22k    72.64%
+  297124 requests in 30.00s, 38.25MB read
+Requests/sec:   9903.68
+Transfer/sec:      1.28MB
+Max Memory Used: 22 MB
+
+************ End of Test **************
