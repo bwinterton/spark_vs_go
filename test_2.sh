@@ -44,7 +44,7 @@ do
 	    kill $COMMANDPID
 	    sleep 1
 	    MEM=$(cat /tmp/results | grep maximum | awk '{print $1}')
-	    echo "Max Memory Used: $(expr $MEM / 1048576)MB"
+	    echo "Max Memory Used: $(expr $MEM / 1048576) MB"
 	    sleep 1
 	done
     done
